@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Trabalhando com imagens </h2>
+       <!-- src= source(forte,origem do arquivo).
+            alt= alternative. O alt serve para a acessibilidade pois quando o a imagem não é carregada,
+            o navegador busca esse texto alternativo, que serve como uma descrição da imagem. quanto
+            mais detalhes esse texto alternativo possuir, melhor a acessiblidade e experiência do usuário-->
+
+        <img src="Demonslayer.jpg" alt="Imagem de um anime chamado Demonslayer" width="680" height="584">
+        <!-- é possivel controlar a altura e a largura da imagem pelo HTML-->
+    <hr> 
+    
+    <figure> 
+    
+        
+        <img sr = " Imagem de um anime chamado Demonslayer" width="680" height="584">
+        <figcaption>Demonslayer é um anime de ação e aventura, baseado no mangá de Koyoharu Gotouge. 
+                A história segue Tanjiro Kamado, um jovem que se torna um caçador de demônios após sua família ser massacrada por essas criaturas. </figcaption>             
+    </figure>
+    <hr>
+    
+    <!--complemento sobre as imagens 28/07/2025-->
+     <!-- picture é um elemento que permite especificar várias fontes de imagem para diferentes condições, 
+        como resolução de tela ou orientação. -->
+
+    <picture>
+
+        <source srcset="Demonslayer.webp" type="image/webp">
+        <source srcset="Demonslayer.jpg" type="image/jpeg">
+        
+    </picture>
+    <!-- srcset é um atributo que permite especificar várias imagens para diferentes resoluções ou taman 
+        de tela. O navegador escolhe a imagem mais adequada com base nas condições do dispositivo do usuário. -->
+
+</body>
+</html>
